@@ -1,0 +1,234 @@
+{dede:include filename="header_index.htm"/} 
+<!--body开始-->
+<div class="Layout">
+  <div class="left fyb">
+    <div class="head">
+      <h2>风云榜</h2>
+    </div>
+    <div class="con">
+      <ul class="list">
+        {dede:php}echo SbYoU_neT_Feng(15);{/dede:php}
+      </ul>
+    </div>
+    <div class="bot"></div>
+  </div>
+  <div class="right zxgx">
+    <div class="Left_669977_NET">
+      <div class="HeadBox">
+        <div class="hDIV">最新上架小说推荐</div>
+        <ul>
+          <li id="Tab_01" class="cur" onmouseover="ShowNewBox('1')">最新</li>
+          <li id="Tab_02"  onmouseover="ShowNewBox('2')">最新</li>
+          <li id="Tab_03" onmouseover="ShowNewBox('3')">奇幻</li>
+          <li id="Tab_04" onmouseover="ShowNewBox('4')">武侠</li>
+        </ul>
+      </div>
+      <div class="ConBox">{dede:php}echo sbyou_net_ZSB().sbyou_net_ZXB().sbyou_net_SPnew(6);{/dede:php}</div>
+      <div class="MoreBox">
+        <ul>
+          {dede:php}echo sbyou_net_DB();{/dede:php}
+        </ul>
+      </div>
+    </div>
+    <div class="Right_669977_NET"> {dede:php}
+      if($appid || $appkey){
+      echo '
+      <div class="LogBox" id="LogBox2"></div>
+      ';
+      }else{
+      echo '
+      <style type="text/css">
+	  .ListBox{margin-top:0px;height:445px;}
+	  </style>
+      ';
+      }
+      {/dede:php}
+    </div>
+  </div>
+</div>
+<div class="Layout">
+  <center>
+    <script type="text/javascript" src="{dede:php}echo $BOOK_URL;{/dede:php}plus/ad_js.php?aid=46"></script>
+  </center>
+</div>
+<div class="Layout bw">
+  <div class="Head">
+    <h2>百万字精品推荐榜</h2>
+    <span>Million words</span><span class="j"></span>
+    <div class="morelist">
+      <div class="more"><a href="{dede:php}echo sbyou_Net_url('tuijian','');{/dede:php}" title="百万精品">百万精品&nbsp;&gt;&gt;</a></div>
+      <div class="list">{dede:php}echo Sbyou_Net_ListNav('tuijian','6');{/dede:php}</div>
+    </div>
+  </div>
+  <div class="Con">
+    <div class="Left">{dede:php}echo sbyou_net_BWJP(15);{/dede:php}</div>
+    <div class="Right">
+      <div class="con" style="margin-top:5px;">
+        <center>
+          <script type="text/javascript" src="{dede:php}echo $BOOK_URL;{/dede:php}plus/ad_js.php?aid=40"></script>
+        </center>
+      </div>
+      <div class="con">{dede:php}echo SByouNet_CatRightScore('wei',9,'score_1');{/dede:php}</div>
+      <div class="r_box qldzb">
+        <div class="head">
+          <h2>最佳潜力大作</h2>
+        </div>
+        <ul id="BoxQL">
+          {dede:php}echo SByouNet_Right('QL',5);{/dede:php}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="Layout">
+  <center>
+    <script type="text/javascript" src="{dede:php}echo $BOOK_URL;{/dede:php}plus/ad_js.php?aid=47"></script>
+  </center>
+</div>
+<div class="Layout jp">
+  <div class="Head">
+    <h2>精品推荐</h2>
+    <span>Boutique Recommend</span><span class="j"></span>
+    <div class="morelist">
+      <div class="more"><a href="{dede:php}echo sbyou_Net_url('quanben','');{/dede:php}" title="全本书库">全本书库&nbsp;&gt;&gt;</a></div>
+      <div class="list">{dede:php}echo Sbyou_Net_ListNav('quanben','6');{/dede:php}</div>
+    </div>
+  </div>
+  <div class="Con jp">
+    <div class="Left">
+      <div class="l_con">
+        <div class="pic">
+          <ul>
+            {dede:php}echo SByou_Net_JP('pic',7,0);{/dede:php}
+          </ul>
+        </div>
+        <div class="lm">{dede:php}echo SByou_Net_JP('cat',5,0);{/dede:php}</div>
+      </div>
+      <div class="l_con">
+        <div class="pic">
+          <ul>
+            {dede:php}echo SByou_Net_JP('pic',7,7);{/dede:php}
+          </ul>
+        </div>
+        <div class="lm">{dede:php}echo SByou_Net_JP('cat',5,3);{/dede:php}</div>
+      </div>
+    </div>
+    <div class="Right">
+      <div class="r_box yddj">
+        <div class="head">
+          <h2>猜你喜欢</h2>
+        </div>
+        <ul id="BoxLike">
+          {dede:php}echo SByouNet_Right('Like',5);{/dede:php}
+        </ul>
+      </div>
+      <div class="r_box ydhp">
+        <div class="head">
+          <h2>最受欢迎</h2>
+        </div>
+        <ul id="BoxWel">
+          {dede:php}echo SByouNet_Right('Wel',6);{/dede:php}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="Layout ph">
+  <div class="Head">
+    <h2>排行榜</h2>
+    <span>Ranking</span><span class="j"></span>
+    <div class="morelist">
+      <div class="more"><a href="{dede:php}echo sbyou_Net_url('paihang','');{/dede:php}" title="排行榜">排行榜&nbsp;&gt;&gt;</a></div>
+      <div class="list">{dede:php}echo Sbyou_Net_ListNav('click','6');{/dede:php}</div>
+    </div>
+  </div>
+  <div class="Con ph">
+    <div class="p_box dj">
+      <div class="head">
+        <h2><a href="{dede:php}echo sbyou_Net_url('paihang','');{/dede:php}" title="点击榜" target="_blank">点击榜</a></h2>
+      </div>
+      <div class="ul_h"><span class="p">排序</span><span class="s">书名<em>&nbsp;/&nbsp;</em>字数</span><span class="d">点击数</span></div>
+      <ul>
+        {dede:php}echo SByouNet_Top(15);{/dede:php}
+      </ul>
+    </div>
+    <div class="p_box hp">
+      <div class="head">
+        <h2><a href="{dede:php}echo sbyou_Net_url('tuijian','');{/dede:php}" title="推荐榜" target="_blank">推荐榜</a></h2>
+      </div>
+      <div class="ul_h"><span class="p">排序</span><span class="s">书名<em>&nbsp;/&nbsp;</em>字数</span><span class="d">好评数</span></div>
+      <ul>
+        {dede:php}echo SByouNet_Good(15);{/dede:php}
+      </ul>
+    </div>
+    <div class="p_box pl">
+      <div class="head">
+        <h2><a href="{dede:php}echo sbyou_Net_url('shuku','');{/dede:php}" title="吐槽榜" target="_blank">吐槽榜</a></h2>
+      </div>
+      <div class="ul_h"><span class="p">排序</span><span class="s">书名<em>&nbsp;/&nbsp;</em>字数</span><span class="d">收藏数</span></div>
+      <ul>
+        {dede:php}echo SByouNet_Bad(15);{/dede:php}
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="Layout">
+  <center>
+    <script type="text/javascript" src="{dede:php}echo $BOOK_URL;{/dede:php}plus/ad_js.php?aid=45"></script>
+  </center>
+</div>
+<div class="Layout m_list">
+  <div class="Head">
+    <h2>更新列表</h2>
+    <span>New List</span> <span class="j"></span>
+    <div class="morelist">
+      <div class="more"><a href="{dede:php}echo sbyou_Net_url('shuku','');{/dede:php}" title="连载书库">连载书库&nbsp;&gt;&gt;</a></div>
+      <div class="list">{dede:php}echo Sbyou_Net_ListNav('shuku','6');{/dede:php}</div>
+    </div>
+  </div>
+  <div class="Con">
+    <div class="Left">
+      <div class="m_head"> <span class="c">类型</span> <span class="t">书名/章节</span> <span class="w">字数</span> <span class="a">作者</span><span class="z">状态</span> <span class="tm">更新时间</span> </div>
+      {dede:php}echo SByou_NET_NewList('','',$OnePAGE_NUM);{/dede:php} </div>
+    <script type="text/javascript">ReMakeList('booklistBox');</script>
+    <div class="Right">
+      <div class="con" style="margin-top:5px;">
+        <center>
+          <script type="text/javascript" src="{dede:php}echo $BOOK_URL;{/dede:php}plus/ad_js.php?aid=41"></script>
+        </center>
+      </div>
+      <div class="con">{dede:php}echo SByouNet_CatRightScore('zugu',9,'bookclick',$tid);{/dede:php}</div>
+      <div class="r_box cmztj cn">
+        <div class="head">
+          <h2>成名作推荐</h2>
+        </div>
+        <ul id="BoxCMZTJ">
+          {dede:php}echo SByouNet_Right('CMZTJ',5,$tid);{/dede:php}
+        </ul>
+      </div>
+      <div class="r_box rmwbtj cn">
+        <div class="head">
+          <h2>热门完本推荐</h2>
+        </div>
+        <ul id="BoxOver">
+          {dede:php}echo SByouNet_Right('Over',5,$tid);{/dede:php}
+        </ul>
+      </div>
+      <div class="con" style="margin:5px 0px">
+        <center>
+          <script type="text/javascript" src="{dede:php}echo $BOOK_URL;{/dede:php}plus/ad_js.php?aid=42"></script>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="Layout">
+  <div class="firendlink">
+    <div class="footer_cont"><strong>友情链接</strong>
+      <div class="fBox">{dede:php}echo SByOu_NET_link();{/dede:php}</div>
+    </div>
+  </div>
+</div>
+<!--body结束--> 
+{dede:include filename="footer_index.htm"/} 
+<script type="text/javascript">SByou_Net_Sitemap();</script> 

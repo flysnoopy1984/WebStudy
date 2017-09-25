@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A4A3E0C1-DDD8-4E6A-8EBD-8D1F2AB0C085}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>csstest</RootNamespace>
+    <AssemblyName>csstest</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\icon_so.png" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\-1.jpg" />
+    <Content Include="images\-2.jpg" />
+    <Content Include="images\-3.jpg" />
+    <Content Include="images\0f0002sfQLf7W38Jz1hzt6.gif" />
+    <Content Include="images\0f000AgvADIUOPV2Vf_sos.jpg" />
+    <Content Include="images\0f000ji2uUnYq3_5jKvIm6.jpg" />
+    <Content Include="images\0f000ntnpAwCFMoxmTK7rs.jpg" />
+    <Content Include="images\0f000PCe-eWGCaSnufB8F6.jpg" />
+    <Content Include="images\0f000QNxZD0n1XcB4Qu4R0.jpg" />
+    <Content Include="images\1343963-1438695450000.jpg" />
+    <Content Include="images\139535_1.jpg" />
+    <Content Include="images\1488766095.7849.jpg" />
+    <Content Include="images\1489315445.9699.jpg" />
+    <Content Include="images\1489315472.6074.jpg" />
+    <Content Include="images\1490261668.2423.jpg" />
+    <Content Include="images\1490680513.4185.jpg" />
+    <Content Include="images\1491722933.4665.jpg" />
+    <Content Include="images\1492951813.8299.jpg" />
+    <Content Include="images\1492952182.0812.jpg" />
+    <Content Include="images\1493522028.4159.jpg" />
+    <Content Include="images\1494500458.6533.jpg" />
+    <Content Include="images\1494764202.3004.jpg" />
+    <Content Include="images\1494917496.2288.jpg" />
+    <Content Include="images\1495975943.0711.jpg" />
+    <Content Include="images\1495976046.056.jpg" />
+    <Content Include="images\1496574299.3446.jpg" />
+    <Content Include="images\1497179138.3662.jpg" />
+    <Content Include="images\1497179306.1876.jpg" />
+    <Content Include="images\1497862873.3253.jpg" />
+    <Content Include="images\1499002331.8781.jpg" />
+    <Content Include="images\1500209642.5393.jpg" />
+    <Content Include="images\1500209923.5221.jpg" />
+    <Content Include="images\1500210968.4182.jpg" />
+    <Content Include="images\1501410377.4019.jpg" />
+    <Content Include="images\1502029285.9355.jpg" />
+    <Content Include="images\1502623231.2657.jpg" />
+    <Content Include="images\1502623281.5467.jpg" />
+    <Content Include="images\1502623501.1462.jpg" />
+    <Content Include="images\1502623593.9854.jpg" />
+    <Content Include="images\1502623651.311.jpg" />
+    <Content Include="images\1503221444.0106.jpg" />
+    <Content Include="images\1503221535.8888.jpg" />
+    <Content Include="images\1503222201.7336.jpg" />
+    <Content Include="images\1503222380.7602.jpg" />
+    <Content Include="images\1503222414.7931.jpg" />
+    <Content Include="images\1503222441.1513.jpg" />
+    <Content Include="images\1724482-1456909398000_1.jpg" />
+    <Content Include="images\1741975-1459482737000_1.jpg" />
+    <Content Include="images\1891235-450-250.jpg" />
+    <Content Include="images\1949748-1467770297000.jpg" />
+    <Content Include="images\1988718-1478341539000.jpg" />
+    <Content Include="images\1988718-1478341539000_1.jpg" />
+    <Content Include="images\2065918-1471226688000_1.jpg" />
+    <Content Include="images\2123770-1475055839000.jpg" />
+    <Content Include="images\2123812-1499582476000.jpg" />
+    <Content Include="images\2160054-450-250.jpg" />
+    <Content Include="images\2182285-1477471018000.jpg" />
+    <Content Include="images\2186530-1501589722000.jpg" />
+    <Content Include="images\2200577-1497856739000.jpg" />
+    <Content Include="images\2206146-1479266882000_1.jpg" />
+    <Content Include="images\2206336-1480251509000.jpg" />
+    <Content Include="images\2210699-1478844120000.jpg" />
+    <Content Include="images\2223184-450-250.jpg" />
+    <Content Include="images\2263666-1497155778000.jpg" />
+    <Content Include="images\2263978-1481090753000_1.jpg" />
+    <Content Include="images\2264063-450-250.jpg" />
+    <Content Include="images\2285202-1482475360000_1.jpg" />
+    <Content Include="images\2285404-1482831986000.jpg" />
+    <Content Include="images\2288556-1482057308000.jpg" />
+    <Content Include="images\2304533-1483425268000.jpg" />
+    <Content Include="images\2305681-1487757920000_1.jpg" />
+    <Content Include="images\2308411-1485074617000.jpg" />
+    <Content Include="images\2308411-1485074617000_1.jpg" />
+    <Content Include="images\2314223-1491226329000_1.jpg" />
+    <Content Include="images\2352056-1485173494000.jpg" />
+    <Content Include="images\2392152-1487663316000.jpg" />
+    <Content Include="images\2429215-1490858510000.jpg" />
+    <Content Include="images\2435373-1491794996000.jpg" />
+    <Content Include="images\2437599-1491805406000.jpg" />
+    <Content Include="images\2453180-1502327556000.jpg" />
+    <Content Include="images\2458923-1493804842000.jpg" />
+    <Content Include="images\2459058-1492401907000.jpg" />
+    <Content Include="images\2459912-1493547090000.jpg" />
+    <Content Include="images\2462750-1500189064000.jpg" />
+    <Content Include="images\2465695-1494424039000_1.jpg" />
+    <Content Include="images\2468048-1495452890000.jpg" />
+    <Content Include="images\2472301-1495800794000.jpg" />
+    <Content Include="images\2474610-1499517777000_1.jpg" />
+    <Content Include="images\2476417-1493706619000.jpg" />
+    <Content Include="images\2482949-1494644569000.jpg" />
+    <Content Include="images\2489315-1496978376000_1.jpg" />
+    <Content Include="images\2497563-1501489207000.jpg" />
+    <Content Include="images\2498353-1502864940000.jpg" />
+    <Content Include="images\2506018-1496719698000.jpg" />
+    <Content Include="images\2508593-1502177695000.jpg" />
+    <Content Include="images\2533250-1498796585000.jpg" />
+    <Content Include="images\2540378-1497930518000.jpg" />
+    <Content Include="images\2551127-1499404233000.jpg" />
+    <Content Include="images\2551127-1499404233000_1.jpg" />
+    <Content Include="images\2552672-1500459694000.jpg" />
+    <Content Include="images\2585376-1502265580000.jpg" />
+    <Content Include="images\2588297-1500623772000.jpg" />
+    <Content Include="images\2588297-1500623772000_1.jpg" />
+    <Content Include="images\493239-1364709925000_1.jpg" />
+    <Content Include="images\524383-1366977340000_1.jpg" />
+    <Content Include="images\543753-420-232.jpg" />
+    <Content Include="images\569929-450-250.jpg" />
+    <Content Include="images\592898-1502239515000.jpg" />
+    <Content Include="images\620124-450-250.jpg" />
+    <Content Include="images\allimg_basic.png" />
+    <Content Include="images\allimg_center.gif" />
+    <Content Include="images\allimg_index.png" />
+    <Content Include="images\allimg_inner.png" />
+    <Content Include="images\allimg_title.png" />
+    <Content Include="images\app.png" />
+    <Content Include="images\bj.png" />
+    <Content Include="images\blank.gif" />
+    <Content Include="images\bot_logo.png" />
+    <Content Include="images\btn_a.png" />
+    <Content Include="images\btn_b.png" />
+    <Content Include="images\bw.png" />
+    <Content Include="images\close.gif" />
+    <Content Include="images\cnnic.png" />
+    <Content Include="images\con790_bg.png" />
+    <Content Include="images\crown.gif" />
+    <Content Include="images\default_3.jpg" />
+    <Content Include="images\emptyimg.jpg" />
+    <Content Include="images\erweima2.jpg" />
+    <Content Include="images\face_01_a.gif" />
+    <Content Include="images\face_02_a.gif" />
+    <Content Include="images\face_03_a.gif" />
+    <Content Include="images\face_04_a.gif" />
+    <Content Include="images\face_05_a.gif" />
+    <Content Include="images\fuck_bg.jpg" />
+    <Content Include="images\hh.png" />
+    <Content Include="images\hy_124x47.png" />
+    <Content Include="images\icon.gif" />
+    <Content Include="images\icon.png" />
+    <Content Include="images\icons_nav.png" />
+    <Content Include="images\ico_others.png" />
+    <Content Include="images\i_gril.png" />
+    <Content Include="images\i_hot.png" />
+    <Content Include="images\i_man.png" />
+    <Content Include="images\i_qian.png" />
+    <Content Include="images\i_t0.gif" />
+    <Content Include="images\i_t1.gif" />
+    <Content Include="images\jp.png" />
+    <Content Include="images\k_bg.png" />
+    <Content Include="images\line02.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\loading_data.gif" />
+    <Content Include="images\LOGO.png" />
+    <Content Include="images\mlogo.png" />
+    <Content Include="images\modews_bg.png" />
+    <Content Include="images\new.gif" />
+    <Content Include="images\newGb.jpg" />
+    <Content Include="images\num_1-10.png" />
+    <Content Include="images\praises.png" />
+    <Content Include="images\qqweibo.gif" />
+    <Content Include="images\ss.jpg" />
+    <Content Include="images\s_box_bg.png" />
+    <Content Include="images\tit.gif" />
+    <Content Include="images\tit_bg.png" />
+    <Content Include="images\top.png" />
+    <Content Include="images\topbtn.gif" />
+    <Content Include="images\topbtndarkcyan.gif" />
+    <Content Include="images\topbtndarkorchid.gif" />
+    <Content Include="images\topbtnf54343.gif" />
+    <Content Include="images\topbtnff8040.gif" />
+    <Content Include="images\topbtnperu.gif" />
+    <Content Include="images\topbtnsteelblue.gif" />
+    <Content Include="images\topList_bg.png" />
+    <Content Include="images\topList_more_bg.png" />
+    <Content Include="images\topList_tit_bg.png" />
+    <Content Include="images\WXLogo24.png" />
+    <Content Include="images\WXLogo28.png" />
+    <Content Include="images\wxqr.png" />
+    <Content Include="Index.html" />
+    <Content Include="Index_header.html" />
+    <Content Include="RefWeb\小说-17K小说网_免费小说下载,最新最好看的小说网.html" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="style\main.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="RefWeb\小说-17K小说网_免费小说下载,最新最好看的小说网_files\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>40578</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:40578/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

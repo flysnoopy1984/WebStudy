@@ -1,0 +1,1031 @@
+@charset 'gb2312';
+/*风云榜*/
+.left.fyb {
+    float: left;
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+}
+
+    .left.fyb .head {
+        width: 100%;
+        height: 38px;
+        background: url('../images/allimg_index.png') no-repeat 0px 0px;
+        overflow: hidden;
+    }
+
+    .left.fyb h2 {
+        font-size: 0px;
+        line-height: 0px;
+    }
+
+    .left.fyb .con {
+        width: 198px;
+        height: auto;
+        border: 1px solid #ccc6c3;
+        border-top: none;
+        border-bottom: none;
+        background-color: #f3e4cd;
+        overflow: hidden;
+    }
+
+    .left.fyb ul {
+        float: left;
+        width: 188px;
+        padding: 0px 5px;
+        overflow: hidden;
+    }
+
+    .left.fyb li {
+        float: left;
+        width: 188px;
+        height: 26px;
+        line-height: 26px;
+        _line-height: 28px;
+        border-bottom: 1px solid #d4d4d4;
+        overflow: hidden;
+    }
+
+        .left.fyb li div {
+            float: left;
+            height: 26px;
+            overflow: hidden;
+        }
+
+    .left.fyb .div_c {
+        width: 60px;
+    }
+
+    .left.fyb .div_t {
+        width: 123px;
+        padding-left: 5px;
+    }
+
+    .left.fyb a {
+        display: inline-block;
+        height: 26px;
+    }
+
+        .left.fyb a.c {
+            color: #7d7d7d;
+        }
+
+        .left.fyb a:hover {
+            color: red;
+        }
+
+    .left.fyb .bot {
+        width: 100%;
+        height: 12px;
+        background: url('../images/allimg_index.png') no-repeat 0px -38px;
+        overflow: hidden;
+    }
+
+    .left.fyb .div_t span {
+        color: red;
+    }
+/*栏目块列表*/
+.lm_li {
+    float: left;
+    width: 235px;
+    height: 156px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+    .lm_li a {
+        display: inline-block;
+    }
+
+    .lm_li h2 {
+        width: 100%;
+        height: 27px;
+        border-bottom: 1px solid #ede7e4;
+        overflow: hidden;
+    }
+
+        .lm_li h2 a {
+            height: 100%;
+            color: brown;
+            font-size: 16px;
+            line-height: 27px;
+            overflow: hidden;
+        }
+
+            .lm_li h2 a:hover {
+                text-decoration: none;
+            }
+
+    .lm_li ul {
+        padding-top: 8px;
+        overflow: hidden;
+    }
+
+    .lm_li li {
+        height: 24px;
+        line-height: 24px;
+        overflow: hidden;
+    }
+
+        .lm_li li span, .lm_li li span a {
+            color: red;
+        }
+
+        .lm_li li span {
+            padding-right: 5px;
+        }
+/*首屏更新*/
+.right.zxgx {
+    float: right;
+    width: 800px;
+    height: 455px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+    .right.zxgx .head {
+        width: 800px;
+        height: 36px;
+        border: 1px solid #e3dbd7;
+        font-size: 0px;
+        line-height: 0px;
+        background: url('../images/allimg_title.png') no-repeat 10px 9px #f8f4f2;
+        overflow: hidden;
+    }
+
+    .right.zxgx .con {
+        width: 800px;
+        height: 408px;
+        border: 1px solid #e3dbd7;
+        border-top: none;
+        background-color: #f8f4f2;
+        overflow: hidden;
+    }
+
+    .right.zxgx .u {
+        width: 748px;
+        height: 198px;
+        padding: 20px;
+        border-bottom: 1px solid #afafaf;
+        overflow: hidden;
+    }
+
+        .right.zxgx .u div {
+            float: left;
+            overflow: hidden;
+        }
+
+    .right.zxgx .pic {
+        width: 142px;
+        height: 178px;
+        padding: 20px 0px 0px 13px;
+        background: url('../images/allimg_index.png') no-repeat 0px -50px;
+    }
+
+        .right.zxgx .pic img {
+            width: 117px;
+            height: 156px;
+        }
+
+    .right.zxgx .title {
+        width: 200px;
+        height: auto;
+        padding-left: 13px;
+    }
+
+        .right.zxgx .title h2 {
+            display: inline;
+            height: 36px;
+            line-height: 40px;
+            _line-height: 42px;
+            font-size: 18px;
+        }
+
+        .right.zxgx .title span {
+            display: inline;
+            color: #454545;
+        }
+
+        .right.zxgx .title p {
+            line-height: 22px;
+        }
+
+            .right.zxgx .title p a {
+                color: #454545;
+                text-decoration: underline;
+            }
+
+                .right.zxgx .title p a:hover {
+                    color: red;
+                }
+
+    .right.zxgx .info {
+        width: 200px;
+        height: auto;
+        padding-top: 5px;
+        padding-left: 13px;
+    }
+
+        .right.zxgx .info a {
+            display: inline-block;
+            line-height: 22px;
+            color: #454545;
+        }
+
+    .right.zxgx .d {
+        position: relative;
+        width: 788px;
+        height: 168px;
+    }
+
+.n_p_box {
+    position: absolute;
+    top: -25px;
+    _top: -24px;
+    right: 0px;
+    overflow: hidden;
+}
+
+    .n_p_box div {
+        float: left;
+        width: 20px;
+        height: 30px;
+        _margin-top: -1px;
+        overflow: hidden;
+        background: url('../images/allimg_index.png') no-repeat -295px 12px;
+    }
+
+    .n_p_box .n {
+        background: url('../images/allimg_index.png') no-repeat -305px 12px;
+    }
+
+    .n_p_box input {
+        float: left;
+        width: 50px;
+        height: 30px;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        overflow: hidden;
+    }
+
+        .n_p_box input.active {
+            font-weight: bold;
+            background: url('../images/allimg_index.png') no-repeat -231px 24px;
+            _background-position: -231px 23px;
+        }
+
+.right.zxgx .d .con_box {
+    position: absolute;
+    width: 748px;
+    height: 128px;
+    top: 20px;
+    left: 20px;
+    overflow: hidden;
+}
+
+.right.zxgx .d .box {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 778px;
+    height: 128px;
+    overflow: hidden;
+}
+
+    .right.zxgx .d .box .lm_li {
+        border-right: 1px solid #e3dbd7;
+    }
+
+.right.zxgx .info p {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}
+
+.right.zxgx .u .u-box {
+    float: left;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.right.zxgx .btn {
+    float: left;
+    width: 200px;
+    overflow: hidden;
+}
+
+    .right.zxgx .btn .yd {
+        color: red;
+    }
+
+    .right.zxgx .btn .xz {
+        color: green;
+    }
+/*百万字精品推荐榜*/
+.Layout.bw .Head {
+    background-position: 10px -112px;
+}
+/*精品推荐*/
+.Layout.jp .Head {
+    background-position: 10px -146px;
+}
+
+.Con.jp .l_con {
+    float: left;
+    width: 100%;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+    .Con.jp .l_con .pic, .Con.jp .lm {
+        float: left;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+        .Con.jp .l_con .pic ul {
+            float: left;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .Con.jp .l_con .pic li {
+            float: left;
+            width: 110px;
+            height: auto;
+            padding-top: 3px;
+            background: url('../images/allimg_basic.png') no-repeat -202px 0px;
+            overflow: hidden;
+        }
+
+            .Con.jp .l_con .pic li a {
+                float: left;
+                overflow: hidden;
+            }
+
+                .Con.jp .l_con .pic li a.p {
+                    width: 84px;
+                    height: 112px;
+                    margin-left: 21px;
+                }
+
+        .Con.jp .l_con .pic img {
+            width: 84px;
+            height: 112px;
+        }
+
+        .Con.jp .l_con .pic a.t {
+            width: 125px;
+            height: 40px;
+            margin-left: -1px\0;
+            line-height: 40px;
+            _line-height: 42px;
+            text-align: center;
+            color: #8a632b;
+        }
+
+            .Con.jp .l_con .pic a.t:hover {
+                color: red;
+            }
+
+.Con.jp .wei_infobox {
+    width: 748px;
+    margin-top: 10px;
+    background-position: -83px 4px;
+}
+
+    .Con.jp .wei_infobox ul {
+        left: 36px;
+        width: 712px;
+    }
+/*排行榜*/
+.Layout.ph .Head {
+    background-position: 10px -180px;
+}
+
+.Con.ph {
+    width: 998px;
+}
+
+    .Con.ph .p_box {
+        float: left;
+        width: 332px;
+        height: auto;
+        overflow: hidden;
+    }
+
+        .Con.ph .p_box.pl {
+            width: 332px;
+        }
+
+    .Con.ph .head {
+        float: left;
+        width: 333px;
+        height: 37px;
+        background-color: #e8e8e8;
+        border-bottom: 1px solid #d7d7d7;
+        overflow: hidden;
+    }
+
+    .Con.ph .p_box.pl .head {
+        width: 332px;
+    }
+
+    .Con.ph .head h2 {
+        float: left;
+        width: 332px;
+        height: 37px;
+        font-size: 0px;
+        line-height: 0px;
+        border-right: 1px solid #cdcac9;
+        overflow: hidden;
+    }
+
+    .Con.ph .head a {
+        float: left;
+        width: 46px;
+        height: 27px;
+        margin: 5px 0px 0px 143px;
+        background: url('../images/allimg_title.png') no-repeat;
+        overflow: hidden;
+    }
+
+    .Con.ph .p_box.dj .head a {
+        background-position: 0px -387px;
+    }
+
+    .Con.ph .p_box.hp .head a {
+        background-position: -60px -387px;
+    }
+
+    .Con.ph .p_box.pl .head a {
+        background-position: -116px -387px;
+    }
+
+    .Con.ph .p_box.dj .head a:hover {
+        background-position: -172px -387px;
+    }
+
+    .Con.ph .p_box.hp .head a:hover {
+        background-position: -232px -387px;
+    }
+
+    .Con.ph .p_box.pl .head a:hover {
+        background-position: -288px -387px;
+    }
+
+    .Con.ph .p_box .ul_h {
+        float: left;
+        width: 332px;
+        height: 26px;
+        line-height: 26px;
+        _line-height: 28px;
+        padding-top: 5px;
+        border-right: 1px solid #dedddd;
+        overflow: hidden;
+    }
+
+        .Con.ph .p_box .ul_h span {
+            float: left;
+            text-align: right;
+            overflow: hidden;
+        }
+
+            .Con.ph .p_box .ul_h span.p {
+                width: 42px;
+            }
+
+            .Con.ph .p_box .ul_h span.s {
+                width: 100px;
+                background: none;
+            }
+
+            .Con.ph .p_box .ul_h span.d {
+                width: 170px;
+            }
+
+    .Con.ph .p_box ul {
+        float: left;
+        width: 332px;
+        height: auto;
+        padding-bottom: 20px;
+        border-right: 1px solid #dedddd;
+        background: url('../images/allimg_basic.png') no-repeat -330px 4px;
+        overflow: hidden;
+    }
+
+    .Con.ph .p_box li {
+        float: left;
+        width: 265px;
+        height: 25px;
+        line-height: 26px;
+        _line-height: 28px;
+        padding: 0px 20px 0px 47px;
+        border-bottom: 1px solid #ececec;
+        overflow: hidden;
+    }
+
+        .Con.ph .p_box li a {
+            float: left;
+            display: inline-block;
+            color: blue;
+            font-size: 14px;
+            overflow: hidden;
+        }
+
+            .Con.ph .p_box li a:hover {
+                color: red;
+            }
+
+        .Con.ph .p_box li span {
+            float: right;
+            height: 25px;
+            line-height: 26px;
+            color: red;
+            overflow: hidden;
+        }
+
+        .Con.ph .p_box li em {
+            float: left;
+            height: 25px;
+            line-height: 26px;
+            font-style: normal;
+            color: green;
+            overflow: hidden;
+        }
+
+        .Con.ph .p_box li .ca {
+            float: left;
+            margin-right: 5px;
+            color: #343434;
+            overflow: hidden;
+        }
+
+            .Con.ph .p_box li .ca a {
+                float: none;
+                color: #999;
+            }
+
+                .Con.ph .p_box li .ca a:hover {
+                    color: red;
+                }
+/*新增首页首屏*/
+.Left_669977_NET {
+    float: left;
+    width: 800px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.HeadBox {
+    float: left;
+    width: 100%;
+    height: 27px;
+    overflow: hidden;
+}
+
+    .HeadBox .hDIV {
+        float: left;
+        width: 155px;
+        height: 26px;
+        line-height: 26px;
+        text-align: center;
+        border-bottom: 1px solid #ccc6c3;
+        font-size: 14px;
+        font-weight: bold;
+        overflow: hidden;
+    }
+
+    .HeadBox a {
+        color: #004D00;
+    }
+
+    .HeadBox ul {
+        float: left;
+        width: 424px;
+        height: 100%;
+        border-right: 1px solid #ccc6c3;
+        overflow: hidden;
+    }
+
+        .HeadBox ul li {
+            float: left;
+            width: 150px;
+            height: 25px;
+            text-align: center;
+            line-height: 26px;
+            border-top: 1px solid #ccc6c3;
+            border-bottom: 1px solid #ccc6c3;
+            border-left: 1px solid #ccc6c3;
+            background: #f3f3f3; /*background:url('../images/i_t0.gif') repeat-x;*/
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+            .HeadBox ul li.cur { /*background:url('../images/i_t1.gif') repeat-x;*/
+                background: #FFF;
+                font-size: 14px;
+                font-weight: bold;
+                border-bottom: 1px solid #FFF;
+            }
+
+.ConBox {
+    float: left;
+    width: 800px;
+    height: 265px;
+    border: 1px solid #ccc6c3;
+    border-top: none;
+    overflow: hidden;
+}
+
+    .ConBox .Box {
+        display: none;
+        float: left;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+        .ConBox .Box.cur {
+            display: block;
+        }
+
+.LisT, .WorD, .PiC {
+    float: left;
+    overflow: hidden;
+}
+
+    .WorD.cur, .PiC.cur {
+        display: block;
+    }
+
+.PiC {
+    display: none;
+    width: 181px;
+    height: 245px;
+    margin: 10px;
+    margin-right: 8px;
+    _margin-left: 5px; /*background: url('../images/newGb.jpg') no-repeat*/
+}
+
+    .PiC a {
+        float: left;
+        width: 100%;
+        height: 100%; /*width:143px;height:192px;margin-left:19px;margin-top:25px;*/
+        overflow: hidden;
+    }
+
+    .PiC img {
+        width: 100%;
+        height: 100%;
+    }
+
+.WorD {
+    display: none;
+    width: 370px;
+}
+
+    .WorD .h {
+        float: left;
+        width: 100%;
+        height: 30px;
+        margin-top: 10px;
+        line-height: 30px;
+        overflow: hidden;
+    }
+
+        .WorD .h .t {
+            float: left;
+            font-size: 24px;
+            color: green;
+            margin-right: 5px;
+            font-weight: bold;
+            overflow: hidden;
+        }
+
+    .WorD .c {
+        float: left;
+        width: 100%;
+        height: 102px;
+        margin-top: 5px;
+        line-height: 24px;
+        overflow: hidden;
+    }
+
+.LisT {
+    float: left;
+    width: 370px;
+    height: 98px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+    .LisT ul {
+        float: left;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+        .LisT ul li {
+            float: left;
+            width: 72px;
+            height: 96px;
+            border: 1px solid #FFF;
+            overflow: hidden;
+        }
+
+            .LisT ul li a {
+                float: left;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+
+            .LisT ul li img {
+                width: 70px;
+                height: 94px;
+                margin: 1px;
+            }
+
+            .LisT ul li.cur {
+                border: 1px solid #ccc6c3;
+            }
+
+.MoreBox {
+    position: relative;
+    float: left;
+    width: 578px;
+    height: 142px;
+    border: 1px solid #ccc6c3;
+    margin-top: 10px;
+    background: #f3f3f3;
+    overflow: hidden;
+}
+
+    .MoreBox ul {
+        position: absolute;
+        left: 15px;
+        top: 9px;
+        width: 553px;
+        height: 125px;
+        overflow: hidden;
+    }
+
+        .MoreBox ul li {
+            float: left;
+            width: 33%;
+            height: 25px;
+            line-height: 25px;
+            overflow: hidden;
+        }
+
+    .MoreBox .n {
+        color: red;
+    }
+
+.Right_669977_NET {
+    float: right;
+    width: 200px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.LogBox {
+    float: left;
+    width: 198px;
+    height: 98px;
+    border: 1px solid #70a636;
+    background: url('../images/qqweibo.gif') repeat-x;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    overflow: hidden;
+}
+
+    .LogBox .logNone {
+        float: left;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+        .LogBox .logNone a {
+            float: left;
+            width: 50%;
+            height: 100%;
+            text-indent: -9999px;
+            overflow: hidden;
+        }
+
+.ListBox {
+    float: left;
+    width: 198px;
+    height: 335px;
+    border: 1px solid #70a636;
+    margin-top: 10px;
+    background: url('../images/ss.jpg') repeat-x;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    overflow: hidden;
+}
+
+    .ListBox .h {
+        float: left;
+        width: 100%;
+        height: 27px;
+        line-height: 24px;
+        font-weight: bold;
+        color: #FFF;
+        text-indent: 10px;
+        overflow: hidden;
+    }
+
+    .ListBox .c {
+        float: left;
+        width: 100%;
+        height: 309px;
+        overflow: hidden;
+    }
+
+        .ListBox .c ul {
+            float: left;
+            width: 100%;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        .ListBox .c dl {
+            position: relative;
+            float: left;
+            width: 198px;
+            height: 26px;
+            line-height: 26px;
+            background: url('../images/icon.gif') no-repeat 10px 8px;
+            overflow: hidden;
+        }
+
+        .ListBox .c dt {
+            position: absolute;
+            top: 0px;
+            left: 30px;
+            height: 100%;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .ListBox .c dd {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            color: rgb(51,102,0);
+            height: 100%;
+            z-index: 5;
+            overflow: hidden;
+        }
+
+            .ListBox .c dd a {
+                position: relative;
+                _right: -6px;
+                color: rgb(51,102,0);
+                padding: 0px 10px;
+                background-color: #FFF;
+            }
+
+        .ListBox .c .Rmore {
+            float: right;
+            font-weight: bold;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+/*会员登陆*/
+.LogBox .logOk {
+    float: left;
+    width: 100%;
+    height: 100%;
+    background: #FFF; /*background: url('http://image.669977.net/templets/www.669977.net/images/logo-wrap.png') repeat;*/
+    overflow: hidden;
+}
+
+.LogBox .picBox, .LogBox .infoBox {
+    float: left;
+    width: 50%;
+    height: 98px; /*background: url('http://image.669977.net/templets/www.669977.net/images/moneyBox.png') repeat;*/
+    overflow: hidden;
+}
+
+    .LogBox .picBox .p {
+        float: left;
+        width: 53px;
+        height: 53px;
+        padding: 0px;
+        margin-left: 22px;
+        margin-top: 10px;
+        -webkit-border-radius: 25px;
+        border-radius: 25px;
+        -moz-border-radius: 25px;
+        background: none;
+        overflow: hidden;
+    }
+
+    .LogBox .picBox .p img {
+            width: 100%;
+            height: 100%;
+        }
+
+    .LogBox .picBox .t {
+        float: left;
+        width: 100%;
+        height: 20px;
+        margin-top: 12px;
+        padding: 0px;
+        text-align: center;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        background: none;
+        overflow: hidden;
+    }
+
+    .LogBox .infoBox p {
+        float: left;
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        overflow: hidden;
+    }
+
+    .LogBox .infoBox .dj {
+        margin-top: 12px;
+    }
+
+
+
+
+/*link*/
+.firendlink {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.footer_cont {
+    margin: 5px 0;
+    padding: 10px 7px;
+    line-height: 2em;
+    font-size: 14px;
+    border: 1px solid;
+    border-color: #fff#efefef#d3d3d3#efefef;
+    box-shadow: 0 1px 1px#efefef;
+    background: #fff;
+    overflow: hidden;
+}
+
+    .footer_cont a {
+        margin-right: 5px;
+    }
+
+.firendlink strong {
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    background: #333;
+    color: #fff;
+    margin-right: 10px;
+    padding: 1px 10px;
+    border-radius: 5px;
+}
+
+.fBox a {
+    text-decoration: underline;
+    display: inline-block;
+}
+/*底部加*/
+.copyright {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}
+/*首页首屏*/
+.ListBox .c {
+    height: 90%;
+}
+
+    .ListBox .c ul {
+        height: 86%;
+    }
+/*首页排行榜*/
+.Con.ph .head a {
+    float: left;
+    width: 100%;
+    height: 100%;
+    line-height: 38px;
+    font-size: 16px;
+    margin: 0px;
+    text-align: center;
+    background: none;
+    overflow: hidden;
+}
